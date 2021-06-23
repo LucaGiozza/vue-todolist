@@ -17,6 +17,10 @@ body{
     margin: 0 auto;
 }
 
+.logo img:hover{
+   opacity: 0.5;
+}
+
 /* metto al centro immagine e caselle */
 
 .logo, .box-container {
@@ -36,6 +40,13 @@ body{
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid grey;
+    cursor: pointer;
+}
+ .box-container button:hover{
+    opacity:0.5;
+}
+.box-container input:hover{
+    opacity:0.5;
 }
 
 .listone{
@@ -77,3 +88,28 @@ body{
     float:right;
 }
 
+
+.end{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.now{
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub{
+   text-align: right;
+   padding:30px;
+}
+.sub button{
+   margin-top: 10px;
+   margin-left: 15px;
+   padding: 5px 5px;
+   border-radius: 5px;
+}
+.sub button:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}

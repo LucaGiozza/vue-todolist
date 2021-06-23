@@ -21,21 +21,30 @@
     
     
         <div class="box-container">
-            <input type="text"  placeholder="inserisci nuova serie">
-            <button>Aggiungi a lista</button>
+            <input type="text"  placeholder="inserisci nuova serie" @keyup.enter="addSerie"  v-model="nuovaSerie" >
+            <button @click="addSerie">Aggiungi a lista</button>
         </div>
     
         <div class="listone">
-            <ul>
-                <li class="lista clearfix"><i class="fas fa-times"></i>La casa de papel</li>
+            <ul v-if="serie.length > 0">
+                <li class="lista clearfix" v-for =" (item,index) in serie">{{item}}<i class="fas fa-times" @click="togliSerie(indeice)"></i></li>
            
             </ul>
+            <h3 v-else>Non ci sono cose da fare</h3>
     
             
         </div>
     
     
-    
+    <p class="end"> Una volta completata la lista, entra nel mondo netflix e inizia a vivere l'avventura</p>
+
+    <div class="sub">
+
+        <p class="now">Accedi subito!</p>
+        <button> Registrati</button>
+        <button>Accedi</button>
+
+    </div>
     
     </div>
 

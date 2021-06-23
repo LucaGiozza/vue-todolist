@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* do lo sfondo al body */
+body{
+    background-image: url(../img/net.png);
+}
+
+
+.container{
+    width:70%;
+
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* metto al centro immagine e caselle */
+
+.logo, .box-container {
+   text-align:center;
+   margin:20px 0;
+
+}
+
+
+.logo img{
+    max-width:300px;
+}
+
+
+/* do le proprietà al bottone e all'input */
+.box-container input, .box-container button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.listone{
+    background-color: rgb(238, 231, 231);
+    border-radius: 10px;
+    margin:30px;
+    padding: 30px;
+}
+
+
+
+.listone ul {
+    list-style:none;
+}
+
+
+/* metto il clearfix perchè ho usato il float */
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.lista{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    cursor: pointer;
+  
+}
+
+/* do l'hover alla lista */
+.lista:hover{
+    background-color: black;
+    color:red;
+}
+
+/* uso float per portare la x a destra */
+.lista i{
+    float:right;
+}
+
